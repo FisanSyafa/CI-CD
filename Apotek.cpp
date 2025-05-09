@@ -100,14 +100,13 @@ Node* cariAlat(Node* headalat, string namaalat) {
 bool isFull(Queue Q) {
     return Q.rear == max - 1;
 }
-
 bool isEmpty(Queue Q) {
     return Q.rear == -1;
 }
 
 void printQueue(Queue Q) {
     if (isEmpty(Q)) {
-        cout << "Antrian tidak ada\n";
+        cout << "Tidak Ada Antrian\n";
     }
     else
     {
