@@ -12,32 +12,32 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
+    - name: Ceckot repository
       uses: actions/checkout@v4
       
     - name: Install dependencies
       run: sudo apt-get install -y g++
 
-    - name: Create input.txt
+    - name: Create alur_sistem_apotek.txt
       run: |
-        echo "1" > input.txt
-        echo "1" >> input.txt
-        echo "2" >> input.txt
-        echo "4" >> input.txt
-        echo "2" >> input.txt
-        echo "1" >> input.txt
-        echo "Paracetamol" >> input.txt
-        echo "15000" >> input.txt
-        echo "n" >> input.txt
-        echo "11" >> input.txt
-        echo "3" >> input.txt
-        echo "1" >> input.txt
-        echo "Paracetamol" >> input.txt
-        echo "1" >> input.txt
-        echo "5" >> input.txt
-        echo "4" >> input.txt
+        echo "1" > alur_sistem_apotek.txt
+        echo "1" >> alur_sistem_apotek.txt
+        echo "2" >> alur_sistem_apotek.txt
+        echo "4" >> alur_sistem_apotek.txt
+        echo "2" >> alur_sistem_apotek.txt
+        echo "1" >> alur_sistem_apotek.txt
+        echo "Paracetamol" >> alur_sistem_apotek.txt
+        echo "15000" >> alur_sistem_apotek.txt
+        echo "n" >> alur_sistem_apotek.txt
+        echo "11" >> alur_sistem_apotek.txt
+        echo "3" >> alur_sistem_apotek.txt
+        echo "1" >> alur_sistem_apotek.txt
+        echo "Paracetamol" >> alur_sistem_apotek.txt
+        echo "1" >> alur_sistem_apotek.txt
+        echo "5" >> alur_sistem_apotek.txt
+        echo "4" >> alur_sistem_apotek.txt
     - name: Compile C++ code
       run: g++ -o main Apotek.cpp
 
     - name: Run the program with input.txt
-      run: ./main < input.txt
+      run: ./main < alur_sistem_apotek.txt
