@@ -100,7 +100,6 @@ Node* cariAlat(Node* headalat, string namaalat) {
 bool isFull(Queue Q) {
     return Q.rear == max - 1;
 }
-
 bool isEmpty(Queue Q) {
     return Q.rear == -1;
 }
