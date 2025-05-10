@@ -106,7 +106,7 @@ bool isEmpty(Queue Q) {
 
 void printQueue(Queue Q) {
     if (isEmpty(Q)) {
-        cout << "Tidak Ada Antrian\n";
+        cout << "Tidak Ada Antrian \n";
     }
     else
     {
